@@ -1,4 +1,5 @@
 body {
+    background-image: url('../img/17973908.jpg');
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@ body {
 }
 
 header {
-    background: #b57f7f;
+    background: #74a2c7;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -30,23 +31,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* Color dorado al pasar el mouse */
+    color: #FFD700; 
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    gap: 20px; /* Espacio entre las casillas */
+    grid-template-columns: 1fr;
+    gap: 20px; 
 }
 
 .card {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
@@ -64,14 +65,11 @@ h1, h2, h3 {
 
 .contact-info {
     margin-bottom: 10px;
-}
-
-.contact-info p {
     margin: 5px 0;
 }
 
 .section h2 {
-    border-bottom: 2px solid #b57f7f;
+    border-bottom: 2px solid #74a2c7;
     padding-bottom: 5px;
 }
 
@@ -86,6 +84,6 @@ h1, h2, h3 {
 
 @media (min-width: 600px) {
     .container {
-        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más grandes */
+        grid-template-columns: 1fr 1fr;
     }
 }
