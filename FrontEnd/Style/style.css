@@ -1,0 +1,92 @@
+body {
+    background-image: url('../img/fondo_claro.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body:hover{
+    background-image: url('../img/fondo_oscuro.jpg');
+    transform: scale(1.05);
+    transition: transform 1s ease;
+}
+
+header {
+    background: #74a2c7;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0044a4; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    color: rgb(98, 146, 172);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+    margin: 5px 0;
+}
+
+.section h2 {
+    border-bottom: 2px solid #74a2c7;
+    padding-bottom: 5px;
+}
+
+.section ul li {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
